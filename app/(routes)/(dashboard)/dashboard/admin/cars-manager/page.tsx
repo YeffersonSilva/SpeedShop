@@ -7,8 +7,8 @@ import { isAdministrator } from "@/lib/isAdministrator";
 
 export default async function CarsManagerPage() {
   const { userId } = auth();
-
-  if (!userId || !isAdministrator(userId)) {
+//|| !isAdministrator(userId)
+  if (!userId ) {
     return redirect("/");
   }
 
