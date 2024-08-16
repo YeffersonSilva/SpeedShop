@@ -1,11 +1,12 @@
 {
-  "name": "speedshop",
+  "name": "rental-cars-course",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "lint": "next lint",
     "postinstall": "prisma generate"
   },
   "dependencies": {
@@ -20,7 +21,7 @@
     "@radix-ui/react-separator": "^1.0.3",
     "@radix-ui/react-slot": "^1.0.2",
     "@radix-ui/react-toast": "^1.1.5",
-    "@stripe/react-stripe-js": "^2.8.0",
+    "@stripe/react-stripe-js": "^2.7.1",
     "@stripe/stripe-js": "^3.5.0",
     "@uploadthing/react": "^6.6.0",
     "axios": "^1.7.2",
@@ -39,7 +40,6 @@
     "react-dom": "^18",
     "react-hook-form": "^7.51.5",
     "rental-cars-course": "file:",
-    "speedshop": "file:",
     "stripe": "^15.10.0",
     "tailwind-merge": "^2.3.0",
     "tailwindcss-animate": "^1.0.7",
