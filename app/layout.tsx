@@ -1,20 +1,15 @@
 import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
 import "./globals.css";
-import NextTopLoader from 'nextjs-toploader';
-import {
-  ClerkProvider,
-  
-} from '@clerk/nextjs'
-import { Toaster } from "@/components/ui/toaster"
-
-
+import NextTopLoader from "nextjs-toploader";
+import { ClerkProvider } from "@clerk/nextjs";
+import { Toaster } from "@/components/ui/toaster";
 
 const outfit = Outfit({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Admin SpeedShop",
-  description: "Project SpeedShop",
+  title: "Admin TarreCars",
+  description: "Course rental cars by TarreDev",
 };
 
 export default function RootLayout({
@@ -24,14 +19,13 @@ export default function RootLayout({
 }>) {
   return (
     <ClerkProvider>
-    <html lang="en">
+      <html lang="en">
         <body className={outfit.className}>
-        
-      <NextTopLoader color="#000" />
+          <NextTopLoader color="#000" />
           {children}
           <Toaster />
-      </body>
+        </body>
       </html>
-      </ClerkProvider>
+    </ClerkProvider>
   );
 }
