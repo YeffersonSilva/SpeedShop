@@ -19,7 +19,7 @@ import { DateRange } from "react-day-picker";
 import axios from "axios";
 import { toast } from "@/components/ui/use-toast";
 
-export function ModalAddReservation(props: ModalAddReservationProps) {
+export  function ModalAddReservation(props: ModalAddReservationProps) {
   const { car } = props;
   const [dateSelected, setDateSelected] = useState<{
     from: Date | undefined;
