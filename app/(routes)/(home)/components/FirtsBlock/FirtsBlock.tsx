@@ -8,7 +8,7 @@ export function FirtsBlock() {
         <h1 className="text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold">
           Premium
           <span className="block">Rental Cars </span>
-          in Spain
+          in Uruguay
         </h1>
         <p className="text-lg mt-2 lg:mt-5 lg:text-xl max-w-sm">
           Dont deny yourself pleasure of driving the best premium cars from
